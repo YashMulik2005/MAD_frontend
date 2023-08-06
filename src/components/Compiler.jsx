@@ -44,7 +44,7 @@ function Compiler() {
     const handlerun = async () => {
         setloader(true)
         try {
-            const result = await axios.post(`http://localhost:3000/compiler`, { requestdata: data })
+            const result = await axios.post(`https://mad-backend.vercel.app/compiler`, { requestdata: data })
             console.log(result);
             setoutput(result.data.data.result.output)
             setshow(false)
