@@ -46,7 +46,7 @@ function Compiler() {
         try {
             const result = await axios.post(`https://code-master-backend.vercel.app/practice/compiler`, { requestdata: data })
             console.log(result);
-            setoutput(result.data.data.result.output)
+            if (result?.data?.data) setoutput(String(result?.data?.data));
             setshow(false)
         }
         catch (err) {
