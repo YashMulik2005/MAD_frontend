@@ -20,7 +20,7 @@ function Compiler() {
     }
     const [show, setshow] = useState(true)
     const [code, setcode] = useState(codedata.java)
-    const [language, setlanguage] = useState("java")
+    const [language, setlanguage] = useState("JAVA8")
     const [input, setinput] = useState(null)
     const [output, setoutput] = useState("")
     //const [editortheme, seteditortheme] = useState(theme == "light" ? eclipse : dracula)
